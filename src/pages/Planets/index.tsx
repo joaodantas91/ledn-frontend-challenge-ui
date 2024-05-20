@@ -15,7 +15,6 @@ export default function Planets() {
         [OrderTypes.none]: <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(157,233,250,1)" width={16} viewBox="0 0 320 512"><path d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"/></svg>,
         [OrderTypes.ascendant]: <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(157,233,250,1)" viewBox="0 0 320 512" width={16}><path d="M182.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>,
         [OrderTypes.descendant]:  <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(157,233,250,1)" viewBox="0 0 320 512"width={16} ><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
-
     }
 
     const [searchedPlanets, setSearchedPlanets] = useState<FuseResult<Planet>[]>([]);
