@@ -1,5 +1,6 @@
 import axios from "axios";
 import { QueryFunctionContext, useQuery } from 'react-query';
+import { Planet } from "../types/Planet";
 
 async function fetchPlanetList() {
   return axios.get("/api/planets");
@@ -21,7 +22,9 @@ export function usePlanetList() {
 }
 
 export function usePlanetDetail(id: string) {
-  const { data, isLoading, isError } = useQuery({
+  const { data, isLoading, isError } = useQuery<{data: {
+    planet: Planet
+  }}>({
     queryKey: ["planets", id],
     queryFn: fetchPlanetDetail,
   });

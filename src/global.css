@@ -1,0 +1,70 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+@font-face {
+    font-family: 'computer_loveregular';
+    src: url('http://localhost:3000/fonts/computerlove-gbrg-webfont.woff2') format('woff2'),
+         url('http://localhost:3000/fonts/computerlove-gbrg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'droidobesh_depotregular';
+    src: url('http://localhost:3000/fonts/droidobeshdepot-gxmve-webfont.woff2') format('woff2'),
+         url('http://localhost:3000/fonts/droidobeshdepot-gxmve-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 24px;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    filter: brightness(1.2);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(157,233,250,1);
+    box-shadow: rgba(157,233,250,0.7) 0px 0 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #052558;
+    
+}

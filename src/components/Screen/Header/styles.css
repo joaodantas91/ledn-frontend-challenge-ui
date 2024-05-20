@@ -1,0 +1,29 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+} 
+
+.screen-header nav {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.screen-header nav a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.screen-header select option[value="galactic-basic"] {
+    font-family: "computer_loveregular";
+}
+
+@media (max-width: 1024px) {
+    .screen .screen-header {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+}

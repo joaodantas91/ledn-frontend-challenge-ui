@@ -1,0 +1,22 @@
+.planet-details {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 300px) );
+
+}
+
+.planet-details p {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.tables-planet-details {
+    padding-right: 10px;
+}
+
+@media (max-width: 1024px) {
+    .planet-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr) );
+    
+    }
+}

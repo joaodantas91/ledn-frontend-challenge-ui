@@ -1,0 +1,190 @@
+:root {
+    --header-height: 30px;
+}
+  
+.screen {
+    --screen-margings: 80px;
+    display: block;
+    position: relative;
+    width: calc(100% - var(--screen-margings));
+    max-width: calc((100vh - var(--screen-margings)) * (4 / 3));
+    aspect-ratio: 4 / 3;
+    padding: 40px;
+    z-index: 1;
+    border-radius: 40px;
+    box-shadow: 0px 0px 12px rgba(157,233,250,1);
+    overflow: hidden;
+}
+.screen::before {
+    content: '';
+    background-color: transparent;
+    background-image: url('http://localhost:3000/screen-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: calc(100%);
+    height: calc(100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+    z-index: -1;
+    box-shadow: inset 0 0 10px rgba(157,233,250,1);
+}
+
+.screen .content {
+    max-height: calc(100% - var(--header-height) - 30px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.table-wrapper {
+    overflow-y: auto;
+    position: relative;
+}   
+
+.screen  {
+    text-shadow: rgba(157,233,250,0.7) 0px 0 10px;
+    color: rgba(157,233,250,1);
+}
+
+.screen header {
+    height: var(--header-height);
+}
+
+.screen td img {
+    filter: drop-shadow(0px 0 10px rgba(157,233,250,0.7) );
+}
+
+.screen input {
+    background: transparent;
+    text-shadow: rgba(157, 233, 250, 0.7) 0px 0 10px;
+    color: rgba(157, 233, 250, 1);
+    border-color: rgba(157, 233, 250, 1);
+    box-shadow: rgba(157, 233, 250, 0.7) 0px 0 10px;
+    height: 30px;
+}
+
+.screen select {
+    height: 30px;
+    width: 200px;
+    background: transparent;
+    text-shadow: rgba(157, 233, 250, 0.7) 0px 0 10px;
+    color: rgba(157, 233, 250, 1);
+    border-color: rgba(157, 233, 250, 1);
+    box-shadow: rgba(157, 233, 250, 0.7) 0px 0 10px;
+
+}
+
+.screen select option {
+    background: #052558;
+}
+
+
+.screen table {
+    width: 100%;
+    border-spacing: 0 10px;
+    text-align: left;
+}
+
+.screen table.planets th {
+    min-width: 50px;
+}
+
+.screen table.planets th:nth-child(2),
+.screen table.planets th:nth-child(3),
+.screen table.planets th:nth-child(4) {
+    width: 150px;
+}
+
+.screen table th button {
+    padding: 0 10px;
+    background: none;
+    box-shadow: rgba(157,233,250,0.7) 0px 0 10px;
+    border: none;
+    color: inherit;
+    border-radius: 10px;
+    background: #052558;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+}
+
+.screen table th button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+.screen table td.status span {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 12px;
+}
+
+.screen table td.status span::before {
+    width: 16px;
+    height: 16px;
+    display: block;
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.screen table td.status.status--blocked span {
+    background: rgb(248, 66, 41);
+    color: #fff;
+}
+
+.screen table td.status.status--blocked span::before {
+    /* width: 18px;
+    height: 18px; */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512' style='&%2310; fill: %23fff;&%2310;'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z'/%3E%3C/svg%3E");
+}
+
+.screen table td.status.status--completed span {
+    background: rgba(157,233,250,1);
+    color: #052558;
+}
+
+.screen table td.status.status--completed span::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' style='&%2310; fill: %23052558;&%2310;'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
+}
+
+.screen table td.status.status--in-progress span {
+    background: rgb(208, 248, 62);
+    color: #052558;
+}
+
+.screen table td.status.status--in-progress span::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' style='&%2310; fill: %23052558;&%2310;'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 1024px) {
+    .screen {
+        width: calc(100% - 40px);
+        aspect-ratio: unset;
+        height: calc(100% - 40px);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screen .content {
+        max-height: none;
+    }
+
+    .screen table {
+        border-spacing: 10px;
+    }
+
+    .screen table td,
+    .screen table th {
+        text-wrap: nowrap;
+    }
+}
+
