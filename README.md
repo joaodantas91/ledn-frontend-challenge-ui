@@ -84,7 +84,7 @@ If you encounter any issues during installation or running the project, feel fre
 
 ## Project video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0EfN4T3PQf4?si=QSpoYdnx53ThOmOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0EfN4T3PQf4/0.jpg)](https://www.youtube.com/embed/0EfN4T3PQf4)
 
 ## Conclusion
 
