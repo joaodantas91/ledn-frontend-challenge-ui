@@ -6,7 +6,7 @@ Welcome to the front-end tech challenge! This project showcases an intuitive UI 
 
 ### Language Selector
 
-The UI provides a language selector allowing users to toggle between Galactic Basic and Droidobesh Depot.
+The UI provides a language selector simulating users to toggle between Galactic Basic and Droidobesh Depot.
 
 ### Dashboard
 
