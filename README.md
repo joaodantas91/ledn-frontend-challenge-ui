@@ -40,9 +40,9 @@ The UI design aims to simulate a spacecraft on-board computer, reminiscent of fu
 - **Almost Monochrome**: Emulates a monochrome display for a vintage feel.
 - **Scattered Lights**: Incorporates scattered lights to enhance the futuristic aesthetic.
 
-![computer with a blue screen](https://github.com/joaodantas91/ledn-frontend-challenge-ui/tree/main/public/computer-reference-1.jpg)
+![computer with a blue screen](https://github.com/joaodantas91/ledn-frontend-challenge-ui/tree/main/public/computer-reference-1.jpg?raw=true)
 
-![spacecraft on-board computer](https://github.com/joaodantas91/ledn-frontend-challenge-ui/tree/main/public/computer-reference-2.jpg)
+![spacecraft on-board computer](https://github.com/joaodantas91/ledn-frontend-challenge-ui/tree/main/public/computer-reference-2.jpg?raw=true)
 
 ### Types and Enums
 
@@ -82,6 +82,9 @@ Running the project is straightforward. Just follow these simple steps:
 3. **Access the Application**: Once the application is up and running, you can access it through your web browser. Open your preferred browser and navigate to the appropriate URL (`http://localhost:3000`).
 
 If you encounter any issues during installation or running the project, feel free to reach out for assistance.
+
+## Project video
+[text](<public/2024-05-20 03-14-37.mkv>)
 
 ## Conclusion
 
