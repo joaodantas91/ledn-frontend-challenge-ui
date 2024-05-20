@@ -40,8 +40,7 @@ The UI design aims to simulate a spacecraft on-board computer, reminiscent of fu
 - **Almost Monochrome**: Emulates a monochrome display for a vintage feel.
 - **Scattered Lights**: Incorporates scattered lights to enhance the futuristic aesthetic.
 
-<img src="https://github.com/joaodantas91/ledn-frontend-challenge-ui/tree/main/public/computer-reference-1.jpg?raw=true" width="128"/>
-![computer with a blue screen](https://github.com/joaodantas91/ledn-frontend-challenge-ui/tree/main/public/computer-reference-1.jpg?raw=true)
+<img src="https://github.com/joaodantas91/ledn-frontend-challenge-ui/tree/main/public/computer-reference-1.jpg?raw=true" width="256"/>
 
 ![computer with a blue screen](https://github.com/joaodantas91/ledn-frontend-challenge-ui/tree/main/public/computer-reference-1.jpg?raw=true)
 
